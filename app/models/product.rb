@@ -18,6 +18,8 @@ class Product < ActiveRecord::Base
       if line_items.empty?
         return true
       else
-        errors.add(:base, '品目が存在します)
+        errors.add(:base, '品目が存在します')
         return false
+      end
+    end
 end
