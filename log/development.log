@@ -3431,3 +3431,14 @@ Served asset /store.js - 304 Not Modified (31ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-06 18:32:35 +0900
 Served asset /application.js - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (7.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20130123104836)
+Migrating to CreateCarts (20130328091137)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130328091137')[0m
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
